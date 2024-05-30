@@ -5,7 +5,7 @@
 This repository contains a lunar segmentation, navigation and reconstruction dataset **LuSNAR** based on multi-sensor (**Stereo Camera**, **LiDAR**, **IMU**) for autonomous exploration.
 The **LuSNAR** is a multi-task, multi-scene, and multi-label lunar dataset, it includes **9** lunar simulation scenes based on Unreal Engine and each scene is divided according to topographic relief and the density of objects.
 
-## Scene Diagrams
+## Scene Diagram
 ![Scene Diagram](image1.png)
 
 The LuSNAR dataset includes:
@@ -16,7 +16,7 @@ The LuSNAR dataset includes:
 - IMU data
 - Rover pose data
 
-## Data Diagrams
+## Data Diagram
 ![Data Diagram](image2.png)
 
 ### Use Cases
