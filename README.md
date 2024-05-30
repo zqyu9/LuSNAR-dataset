@@ -8,6 +8,8 @@ The **LuSNAR** is a multi-task, multi-scene, and multi-label lunar dataset, it i
 ## Scene Diagram
 ![Scene Diagram](image1.png)
 
+
+## Data Diagram
 The LuSNAR dataset includes:
 - High-resolution stereo image pairs
 - Panoramic semantic labels
@@ -15,8 +17,6 @@ The LuSNAR dataset includes:
 - LiDAR point clouds
 - IMU data
 - Rover pose data
-
-## Data Diagram
 ![Data Diagram](image2.png)
 
 ### Use Cases
