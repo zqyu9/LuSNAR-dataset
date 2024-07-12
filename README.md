@@ -74,11 +74,11 @@ The correspondence between the colors in semantic images and category numbers is
 
 | Category Number | Category       | Color   |
 |-----------------|----------------|---------|
-| 0               | Lunar regolith | ![#BB469C](https://via.placeholder.com/15/BB469C/000000?text=+) #BB469C |
-| 1               | Impact crater  | ![#7800C8](https://via.placeholder.com/15/7800C8/000000?text=+) #7800C8 |
-| 2               | Rock           | ![#E8FA50](https://via.placeholder.com/15/E8FA50/000000?text=+) #E8FA50 |
-| 3               | Mountain       | ![#AD451F](https://via.placeholder.com/15/AD451F/000000?text=+) #AD451F |
-| 4               | Sky            | ![#22C9F8](https://via.placeholder.com/15/22C9F8/000000?text=+) #22C9F8 |
+| 0               | Lunar regolith | ![#BB469C](https://via.placeholder.com/15/BB469C/000000?text=+) `#BB469C` |
+| 1               | Impact crater  | ![#7800C8](https://via.placeholder.com/15/7800C8/000000?text=+) `#7800C8` |
+| 2               | Rock           | ![#E8FA50](https://via.placeholder.com/15/E8FA50/000000?text=+) `#E8FA50` |
+| 3               | Mountain       | ![#AD451F](https://via.placeholder.com/15/AD451F/000000?text=+) `#AD451F` |
+| 4               | Sky            | ![#22C9F8](https://via.placeholder.com/15/22C9F8/000000?text=+) `#22C9F8` |
 
 The correspondence between category numbers and their respective categories in the LiDAR point cloud data is as follows:
 
