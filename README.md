@@ -26,7 +26,9 @@ The dataset can be used for comprehensive evaluation of autonomous perception an
 - 3D Reconstruction
 
 ### Availability
-The LuSNAR dataset is expected to be available in the latter half of 2024.
+The LuSNAR dataset is available for download from CSTCloud.
+[LuSNAR Dataset Download](https://pan.cstcloud.cn/s/2Ie7D5PSLU)
+Password:fjZt
 
 ## Dataset Structure
 The LuSNAR dataset has a total size of **108GB**, containing:
@@ -68,11 +70,28 @@ The LuSNAR dataset has a total size of **108GB**, containing:
 ├── Rover_pose.txt
 └── IMU.txt
 ```
+The correspondence between the colors in semantic images and category numbers is as follows:
+
+| Category Number | Category       | Color   |
+|-----------------|----------------|---------|
+| 0               | Lunar regolith | ![#BB469C](https://via.placeholder.com/15/BB469C/000000?text=+) #BB469C |
+| 1               | Impact crater  | ![#7800C8](https://via.placeholder.com/15/7800C8/000000?text=+) #7800C8 |
+| 2               | Rock           | ![#E8FA50](https://via.placeholder.com/15/E8FA50/000000?text=+) #E8FA50 |
+| 3               | Mountain       | ![#AD451F](https://via.placeholder.com/15/AD451F/000000?text=+) #AD451F |
+| 4               | Sky            | ![#22C9F8](https://via.placeholder.com/15/22C9F8/000000?text=+) #22C9F8 |
+
+The correspondence between category numbers and their respective categories in the LiDAR point cloud data is as follows:
+
+| Category Number | Category       |
+|-----------------|----------------|
+| -1              | Lunar regolith |
+| 0               | Impact crater  |
+| 174             | Rock           |
 
 ## File Format
 ### LiDAR/timestamp.txt
 ```plaintext
-| x [m] | y [m] | z [m] | category |
+| x [m] | y [m] | z [m] | category number |
 ```
 ### Rover_pose.txt
 ```plaintext
