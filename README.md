@@ -74,11 +74,12 @@ The correspondence between the colors in semantic images and category numbers is
 
 | Category Number | Category       | Color   |
 |-----------------|----------------|---------|
-| 0               | Lunar regolith | ![BB469C](https://via.placeholder.com/15/BB469C/000000?text=+) `#BB469C` |
-| 1               | Impact crater  | ![7800C8](https://via.placeholder.com/15/7800C8/000000?text=+) `#7800C8` |
-| 2               | Rock           | ![E8FA50](https://via.placeholder.com/15/E8FA50/000000?text=+) `#E8FA50` |
-| 3               | Mountain       | ![AD451F](https://via.placeholder.com/15/AD451F/000000?text=+) `#AD451F` |
-| 4               | Sky            | ![22C9F8](https://via.placeholder.com/15/22C9F8/000000?text=+) `#22C9F8` |
+| 0               | Lunar regolith | ![BB469C](https://img.shields.io/badge/BB469C-%23BB469C.svg?style=for-the-badge&logo=appveyor&logoColor=white) |
+| 1               | Impact crater  | ![7800C8](https://img.shields.io/badge/7800C8-%237800C8.svg?style=for-the-badge&logo=appveyor&logoColor=white) |
+| 2               | Rock           | ![E8FA50](https://img.shields.io/badge/E8FA50-%23E8FA50.svg?style=for-the-badge&logo=appveyor&logoColor=white) |
+| 3               | Mountain       | ![AD451F](https://img.shields.io/badge/AD451F-%23AD451F.svg?style=for-the-badge&logo=appveyor&logoColor=white) |
+| 4               | Sky            | ![22C9F8](https://img.shields.io/badge/22C9F8-%2322C9F8.svg?style=for-the-badge&logo=appveyor&logoColor=white) |
+
 
 The correspondence between category numbers and their respective categories in the LiDAR point cloud data is as follows:
 
