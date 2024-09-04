@@ -93,32 +93,34 @@ The correspondence between category numbers and their respective categories in t
 
 Diagram showing the orientation of the rover and different sensor coordinate systems:
 ![Coordinate system Diagram](3.png)
-The extrinsic parameters of different sensors relative to the lunar rover body coordinate system are as follows:
-- parent: body
+- **Parent:** Body
+    - **Child:** IMU
+        - **Translation:** [1.000, 0.000, -1.500] // x, y, z
+        - **Rotation:**
+            - **Quaternion:** [0.000, 0.000, 0.000, 1.000] // qx, qy, qz, qw
+            - **RPY (radian):** [0.000, -0.000, 0.000] // roll, pitch, yaw (rad)
+            - **RPY (degree):** [0.000, -0.000, 0.000] // roll, pitch, yaw (degree)
 
-    - child: imu
-        - Translation: [1.000, 0.000, -1.500]                   // x, y, z
-        - Rotation: in Quaternion [0.000, 0.000, 0.000, 1.000]  // qx, qy, qz, qw
-                    in RPY (radian) [0.000, -0.000, 0.000]      // r, p, y (rad)
-                    in RPY (degree) [0.000, -0.000, 0.000]      // r, p, y (degree)
+    - **Child:** LiDAR
+        - **Translation:** [1.000, 0.000, -1.500]
+        - **Rotation:**
+            - **Quaternion:** [0.000, 0.000, 0.000, 1.000]
+            - **RPY (radian):** [0.000, -0.000, 0.000]
+            - **RPY (degree):** [0.000, -0.000, 0.000]
 
-    - child: lidar
-        - Translation: [1.000, 0.000, -1.500]
-        - Rotation: in Quaternion [0.000, 0.000, 0.000, 1.000]
-                    in RPY (radian) [0.000, -0.000, 0.000]
-                    in RPY (degree) [0.000, -0.000, 0.000]
+    - **Child:** Left Camera
+        - **Translation:** [1.000, -0.155, -1.500]
+        - **Rotation:**
+            - **Quaternion:** [0.406, 0.406, 0.579, 0.579]
+            - **RPY (radian):** [1.223, -0.000, 1.571]
+            - **RPY (degree):** [70.077, -0.000, 90.000]
 
-    - child: left_camera
-        - Translation: [1.000, -0.155, -1.500]
-        - Rotation: in Quaternion [0.406, 0.406, 0.579, 0.579]
-                    in RPY (radian) [1.223, -0.000, 1.571]
-                    in RPY (degree) [70.077, -0.000, 90.000]
-
-    -child: right_camera
-        - Translation: [1.000, 0.155, -1.500]
-        - Rotation: in Quaternion [0.406, 0.406, 0.579, 0.579]
-                    in RPY (radian) [1.223, -0.000, 1.571]
-                    in RPY (degree) [70.077, -0.000, 90.000]
+    - **Child:** Right Camera
+        - **Translation:** [1.000, 0.155, -1.500]
+        - **Rotation:**
+            - **Quaternion:** [0.406, 0.406, 0.579, 0.579]
+            - **RPY (radian):** [1.223, -0.000, 1.571]
+            - **RPY (degree):** [70.077, -0.000, 90.000]
 
 ## File Format
 ### LiDAR/timestamp.txt
