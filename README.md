@@ -93,6 +93,7 @@ The correspondence between category numbers and their respective categories in t
 
 Diagram showing the orientation of the rover and different sensor coordinate systems:
 ![Coordinate system Diagram](3.png)
+The extrinsic parameters of different sensors relative to the lunar rover body coordinate system are as follows:
 - **Parent:** Body
     - **Child:** IMU
         - **Translation:** [1.000, 0.000, -1.500] // x, y, z
