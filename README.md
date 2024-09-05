@@ -91,7 +91,7 @@ The correspondence between category numbers and their respective categories in t
 | 0               | Impact crater  |
 | 174             | Rock           |
 
-Diagram showing the orientation of the rover and different sensor coordinate systems:
+Diagram showing the orientation of the rover and different sensor coordinate systems(For details on the extrinsic parameters, please refer to the paper.):
 ![Coordinate system Diagram](3.png)
 The extrinsic parameters of different sensors relative to the lunar rover body coordinate system are as follows:
 - **Parent:** Body
