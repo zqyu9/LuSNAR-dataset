@@ -10,6 +10,8 @@ our paper has been published on ArXiv. [Paper](https://arxiv.org/abs/2407.06512)
 ## Scene Diagram
 ![Scene Diagram](1.png)
 
+## Trajectory Diagram
+![Trajectory Diagram](4.png)
 
 ## Data Diagram
 The LuSNAR dataset includes:
