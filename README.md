@@ -30,7 +30,7 @@ The dataset can be used for comprehensive evaluation of autonomous perception an
 ### Availability
 The LuSNAR dataset is available for download from CSTCloud.
 [LuSNAR Dataset Download](https://pan.cstcloud.cn/s/2Ie7D5PSLU)
-Password:fjZt
+Password:fjZt. [BEV Data](https://pan.cstcloud.cn/s/ZzPLzrkTEc)  Password：jtk0.
 
 ## Dataset Structure
 The LuSNAR dataset has a total size of **108GB**, containing:
