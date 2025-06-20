@@ -91,6 +91,7 @@ The correspondence between category numbers and their respective categories in t
 | 0               | Impact crater  |
 | 174             | Rock           |
 
+## Camera Extrinsic Parameters
 Diagram showing the orientation of the rover and different sensor coordinate systems(For details on the extrinsic parameters, please refer to the paper.):
 ![Coordinate system Diagram](3.png)
 The extrinsic parameters of different sensors relative to the lunar rover body coordinate system are as follows:
@@ -122,6 +123,16 @@ The extrinsic parameters of different sensors relative to the lunar rover body c
             - **Quaternion:** [0.406, 0.406, 0.579, 0.579]
             - **RPY (radian):** [1.223, -0.000, 1.571]
             - **RPY (degree):** [70.077, -0.000, 90.000]
+
+## Camera Intrinsic Parameters
+
+| Sensor       | Details                                                                                                                                                                                                                                                                     |
+|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2×Camera     | RGB, 10 Hz capture frequency, 1024×1024 resolution, 610.17784 focal length, 80°×80° FOV, 310 mm baseline.                                                                                                                           |
+| 1×LiDAR      | Spinning, 128 beams, 10 Hz capture frequency, 360° horizontal FOV, -25° to 27° vertical FOV, ≤30 m range, up to 20M points per second.                                                                                               |
+| 1×IMU        | 100 Hz capture frequency, 3-Axis, 0.002353596 (m/s³√Hz) accelerometer random walk, 8.7266462e-5 (rad/s√Hz) gyroscope random walk, 1.2481827e-5 (m/s²√Hz) accelerometer bias instability, 9.9735023e-7 (rad/s√Hz) gyroscope bias instability. |
+
+
 
 ## File Format
 ### LiDAR/timestamp.txt
