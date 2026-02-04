@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="LuSNAR: A Lunar Segmentation, Navigation and Reconstruction Dataset">
+  <meta name="description" content="First multi-task lunar benchmark with 108GB of high-quality stereo images, LiDAR, semantic labels, and IMU data for autonomous lunar exploration research.">
+  <meta name="keywords" content="Lunar exploration, semantic segmentation, SLAM, 3D reconstruction, autonomous navigation, dataset, LiDAR, stereo vision, lunar rover">
+  <meta name="author" content="Jiayi Liu, Xubo Luo, Qianyu Zhang, Xue Wan">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="University of Chinese Academy of Sciences">
+  <meta property="og:title" content="LuSNAR: A Lunar Segmentation, Navigation and Reconstruction Dataset">
+  <meta property="og:description" content="First multi-task lunar benchmark with 108GB of high-quality stereo images, LiDAR, semantic labels, and IMU data for autonomous lunar exploration research.">
+  <meta property="og:url" content="https://github.com/zqyu9/LuSNAR-dataset">
+  <meta property="og:image" content="https://github.com/zqyu9/LuSNAR-dataset/raw/main/1.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="LuSNAR Dataset - Nine Simulation Scenes">
+  <meta property="article:published_time" content="2024-07-01T00:00:00.000Z">
+  <meta property="article:author" content="Jiayi Liu">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="Lunar Exploration">
+  <meta property="article:tag" content="Semantic Segmentation">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@UCAS">
+  <meta name="twitter:creator" content="@JiayiLiu">
+  <meta name="twitter:title" content="LuSNAR: A Lunar Segmentation, Navigation and Reconstruction Dataset">
+  <meta name="twitter:description" content="First multi-task lunar benchmark with 108GB of high-quality stereo images, LiDAR, semantic labels, and IMU data for autonomous lunar exploration research.">
+  <meta name="twitter:image" content="https://github.com/zqyu9/LuSNAR-dataset/raw/main/1.png">
+  <meta name="twitter:image:alt" content="LuSNAR Dataset - Nine Simulation Scenes">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="LuSNAR: A Lunar Segmentation, Navigation and Reconstruction Dataset based on Muti-sensor for Autonomous Exploration">
+  <meta name="citation_author" content="Liu, Jiayi">
+  <meta name="citation_author" content="Luo, Xubo">
+  <meta name="citation_author" content="Zhang, Qianyu">
+  <meta name="citation_author" content="Wan, Xue">
+  <meta name="citation_publication_date" content="2024">
+  <meta name="citation_conference_title" content="IEEE Transactions on Geoscience and Remote Sensing">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2407.06512.pdf">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <title>LuSNAR: A Lunar Segmentation, Navigation and Reconstruction Dataset | UCAS</title>
+  
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "LuSNAR: A Lunar Segmentation, Navigation and Reconstruction Dataset",
+    "description": "First multi-task lunar benchmark with 108GB of high-quality stereo images, LiDAR, semantic labels, and IMU data for autonomous lunar exploration research.",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Jiayi Liu",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "University of Chinese Academy of Sciences"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Xubo Luo",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "University of Chinese Academy of Sciences"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Qianyu Zhang",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "University of Chinese Academy of Sciences"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Xue Wan",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "University of Chinese Academy of Sciences"
+        }
+      }
+    ],
+    "datePublished": "2024-07-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "IEEE Transactions on Geoscience and Remote Sensing"
+    },
+    "url": "https://github.com/zqyu9/LuSNAR-dataset",
+    "image": "https://github.com/zqyu9/LuSNAR-dataset/raw/main/1.png",
+    "keywords": ["Lunar exploration", "Semantic segmentation", "SLAM", "3D reconstruction", "Autonomous navigation", "LiDAR", "Stereo vision"],
+    "abstract": "LuSNAR addresses the critical gap in autonomous lunar exploration by providing a multi-task, multi-scene, and multi-label benchmark dataset. Unlike existing datasets that focus on single tasks, LuSNAR enables comprehensive evaluation of perception and navigation systems essential for next-generation lunar rovers.",
+    "citation": "@article{liu2024lusnar, title={LuSNAR: A Lunar Segmentation, Navigation and Reconstruction Dataset based on Muti-sensor for Autonomous Exploration}, author={Liu, Jiayi and Zhang, Qianyu and Wan, Xue and Zhang, Shengyang and Tian, Yaolin and Han, Haodong and Zhao, Yutao and Liu, Baichuan and Zhao, Zeyuan and Luo, Xubo}, journal={arXiv preprint arXiv:2407.06512}, year={2024}}",
+    "isAccessibleForFree": true,
+    "license": "https://opensource.org/licenses/MIT",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://github.com/zqyu9/LuSNAR-dataset"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "Lunar Exploration"
+      },
+      {
+        "@type": "Thing", 
+        "name": "Computer Vision"
+      },
+      {
+        "@type": "Thing", 
+        "name": "SLAM"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "University of Chinese Academy of Sciences",
+    "url": "https://www.ucas.ac.cn",
+    "logo": "https://github.com/zqyu9/LuSNAR-dataset/raw/main/static/images/favicon.ico",
+    "sameAs": [
+      "https://github.com/zqyu9/LuSNAR-dataset"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- More Works Dropdown -->
+  <div class="more-works-container">
+    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
+      <i class="fas fa-flask"></i>
+      More Works
+      <i class="fas fa-chevron-down dropdown-arrow"></i>
+    </button>
+    <div class="more-works-dropdown" id="moreWorksDropdown">
+      <div class="dropdown-header">
+        <h4>More Works from Our Lab</h4>
+        <button class="close-btn" onclick="toggleMoreWorks()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="works-list">
+        <!-- TODO: Replace with your lab's related works -->
+        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
+          <div class="work-info">
+            <!-- TODO: Replace with actual paper title -->
+            <h5>Paper Title 1</h5>
+            <!-- TODO: Replace with brief description -->
+            <p>Brief description of the work and its main contribution.</p>
+            <!-- TODO: Replace with venue and year -->
+            <span class="work-venue">Conference/Journal 2024</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <!-- TODO: Add more related works or remove extra items -->
+        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Paper Title 2</h5>
+            <p>Brief description of the work and its main contribution.</p>
+            <span class="work-venue">Conference/Journal 2023</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Paper Title 3</h5>
+            <p>Brief description of the work and its main contribution.</p>
+            <span class="work-venue">Conference/Journal 2023</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">LuSNAR: A Lunar Segmentation, Navigation and Reconstruction Dataset</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://github.com/zqyu9" target="_blank">Jiayi Liu</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://luoxubo.github.io/" target="_blank">Xubo Luo</a><sup>1,2</sup>,</span>
+                  <span class="author-block">
+                    Qianyu Zhang<sup>1</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://people.ucas.edu.cn/~wanxue" target="_blank">Xue Wan</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                    Shengyang Zhang<sup>1</sup>,</span>
+                  <span class="author-block">
+                    Yaolin Tian<sup>1</sup>,</span>
+                  <span class="author-block">
+                    Haodong Han<sup>1</sup>,</span>
+                  <span class="author-block">
+                    Yutao Zhao<sup>1</sup>,</span>
+                  <span class="author-block">
+                    Baichuan Liu<sup>1</sup>,</span>
+                  <span class="author-block">
+                    Zeyuan Zhao<sup>1</sup></span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>University of Chinese Academy of Sciences &nbsp;&nbsp; <sup>2</sup>Chinese Academy of Sciences<br>Under Review at IEEE Transactions on Geoscience and Remote Sensing (TGRS)</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2407.06512.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <span class="link-block">
+                      <a href="https://pan.cstcloud.cn/s/2Ie7D5PSLU" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-database"></i>
+                      </span>
+                      <span>Dataset (CSTCloud)</span>
+                    </a>
+                  </span>
+
+                  <span class="link-block">
+                    <a href="https://huggingface.co/datasets/JeremyLuo/LuSNAR" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-database"></i>
+                    </span>
+                    <span>Dataset (HuggingFace)</span>
+                  </a>
+                </span>
+
+                  <span class="link-block">
+                    <a href="https://github.com/zqyu9/LuSNAR-dataset" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2407.06512" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            LuSNAR addresses the critical gap in autonomous lunar exploration by providing a multi-task, multi-scene, and multi-label benchmark dataset. Unlike existing datasets that focus on single tasks, LuSNAR enables comprehensive evaluation of perception and navigation systems essential for next-generation lunar rovers. The dataset includes 108GB of synchronized multi-sensor data comprising high-resolution stereo camera images (1024×1024 at 10 Hz), dense depth maps, pixel-perfect semantic labels across five categories (regolith, craters, rocks, mountains, sky), 128-beam LiDAR point clouds with semantic annotations, and 100 Hz IMU measurements with ground truth trajectories. Nine diverse simulation scenes represent varied lunar terrain characteristics categorized by topographic relief and object density. Built using Unreal Engine with physically accurate sensor simulation, LuSNAR provides photo-realistic rendering and supports multiple research tasks including 2D/3D semantic segmentation, visual/LiDAR SLAM, stereo matching, and 3D reconstruction.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- TODO: Replace with your research result images -->
+        <img src="static/images/1.png" alt="First research result visualization" loading="lazy"/>
+        <!-- TODO: Replace with description of this result -->
+        <h2 class="subtitle has-text-centered">
+          Nine simulation scenes with varying topographic complexity and object density.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/4.png" alt="Second research result visualization" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          Sample trajectory visualization across different scenes.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/2.png" alt="Third research result visualization" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+         Multi-modal data visualization: RGB, semantic labels, depth, and LiDAR.
+       </h2>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/3.png" alt="Fourth research result visualization" loading="lazy"/>
+      <h2 class="subtitle has-text-centered">
+        Sensor configuration and coordinate system definitions.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@article{liu2024lusnar,
+  title={LuSNAR: A Lunar Segmentation, Navigation and Reconstruction Dataset based on Muti-sensor for Autonomous Exploration},
+  author={Liu, Jiayi and Zhang, Qianyu and Wan, Xue and Zhang, Shengyang and Tian, Yaolin and Han, Haodong and Zhao, Yutao and Liu, Baichuan and Zhao, Zeyuan and Luo, Xubo},
+  journal={arXiv preprint arXiv:2407.06512},
+  year={2024}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>

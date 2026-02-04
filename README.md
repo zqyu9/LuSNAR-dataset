@@ -5,6 +5,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2407.06512-b31b1b.svg)](https://arxiv.org/abs/2407.06512)
 [![Project Page](https://img.shields.io/badge/Project-Page-blue)](https://github.com/zqyu9/LuSNAR-dataset)
 [![Dataset](https://img.shields.io/badge/Dataset-CSTCloud-green)](https://pan.cstcloud.cn/s/2Ie7D5PSLU)
+[![Dataset](https://img.shields.io/badge/🤗-HuggingFace-yellow)](https://huggingface.co/datasets/JeremyLuo/LuSNAR)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **Jiayi Liu¹** · **[Xubo Luo](https://luoxubo.github.io/)** · **Qianyu Zhang¹** · **[Xue Wan](https://people.ucas.edu.cn/~wanxue)¹** · **Shengyang Zhang¹** · **Yaolin Tian¹** · **Haodong Han¹** · **Yutao Zhao¹** · **Baichuan Liu¹** · **Zeyuan Zhao¹** · **Xubo Luo¹**
@@ -40,7 +41,7 @@
 ## 🎬 Overview
 
 <div align="center">
-  <img src="1.png" alt="Scene Overview" width="90%">
+  <img src="static/images/1.png" alt="Scene Overview" width="90%">
   <p><i>Nine simulation scenes with varying topographic complexity and object density</i></p>
 </div>
 
@@ -111,7 +112,7 @@
 </div>
 
 <div align="center">
-  <img src="4.png" alt="Trajectory Visualization" width="70%">
+  <img src="static/images/4.png" alt="Trajectory Visualization" width="70%">
   <p><i>Sample trajectory visualization across different scenes</i></p>
 </div>
 
@@ -145,7 +146,7 @@ LuSNAR/
 
 <div align="center">
 
-<img src="2.png" alt="Data Modalities" width="85%">
+<img src="static/images/2.png" alt="Data Modalities" width="85%">
 <p><i>Multi-modal data visualization: RGB, semantic labels, depth, and LiDAR</i></p>
 
 ### 2D Semantic Labels
@@ -197,7 +198,7 @@ LuSNAR/
 - **Gyroscope Random Walk**: 8.7266462e-5 rad/s√Hz
 
 <div align="center">
-  <img src="3.png" alt="Coordinate Systems" width="65%">
+  <img src="static/images/3.png" alt="Coordinate Systems" width="65%">
   <p><i>Sensor configuration and coordinate system definitions</i></p>
 </div>
 
