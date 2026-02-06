@@ -8,10 +8,11 @@
 [![Dataset](https://img.shields.io/badge/🤗-HuggingFace-yellow)](https://huggingface.co/datasets/JeremyLuo/LuSNAR)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**Jiayi Liu¹** · **[Xubo Luo](https://luoxubo.github.io/)** · **Qianyu Zhang¹** · **[Xue Wan](https://people.ucas.edu.cn/~wanxue)¹** · **Shengyang Zhang¹** · **Yaolin Tian¹** · **Haodong Han¹** · **Yutao Zhao¹** · **Baichuan Liu¹** · **Zeyuan Zhao¹** · **Xubo Luo¹**
+**Jiayi Liu¹** · **[Xubo Luo](https://luoxubo.github.io/)¹** · **Qianyu Zhang¹** · **[Xue Wan](https://people.ucas.edu.cn/~wanxue)²** · **Chenming Ye³** · **Shengyang Zhang¹** · **Yaolin Tian¹** · **Haodong Han¹** · **Yutao Zhao¹** · **Baichuan Liu¹** · **Zeyuan Zhao¹** · **[Zhizhong Kang](https://scholar.cugb.edu.cn/scholar/scholarDetail/347.shtml)³**
 
 1 *University of Chinese Academy of Sciences*<br>
-2 *Chinese Academy of Sciences*
+2 *Chinese Academy of Sciences*<br>
+3 *China University of Geosciences (Beijing)*
 
 **Under Review at IEEE Transactions on Geoscience and Remote Sensing (TGRS)**
 
