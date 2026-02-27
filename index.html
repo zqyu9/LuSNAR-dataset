@@ -192,54 +192,6 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
   <main id="main-content">
   <section class="hero">
     <div class="hero-body">
@@ -251,11 +203,13 @@
               <span class="author-block">
                 <a href="https://github.com/zqyu9" target="_blank">Jiayi Liu</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="https://luoxubo.github.io/" target="_blank">Xubo Luo</a><sup>1,2</sup>,</span>
+                  <a href="https://luoxubo.github.io/" target="_blank">Xubo Luo</a><sup>1</sup>,</span>
                   <span class="author-block">
                     Qianyu Zhang<sup>1</sup>,</span>
                   <span class="author-block">
-                    <a href="https://people.ucas.edu.cn/~wanxue" target="_blank">Xue Wan</a><sup>1</sup>,</span>
+                    <a href="https://people.ucas.edu.cn/~wanxue" target="_blank">Xue Wan</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                    Chenming Ye<sup>3</sup>,</span>
                   <span class="author-block">
                     Shengyang Zhang<sup>1</sup>,</span>
                   <span class="author-block">
@@ -267,11 +221,13 @@
                   <span class="author-block">
                     Baichuan Liu<sup>1</sup>,</span>
                   <span class="author-block">
-                    Zeyuan Zhao<sup>1</sup></span>
+                    Zeyuan Zhao<sup>1</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://scholar.cugb.edu.cn/scholar/scholarDetail/347.shtml" target="_blank">Zhizhong Kang</a><sup>3</sup></span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>University of Chinese Academy of Sciences &nbsp;&nbsp; <sup>2</sup>Chinese Academy of Sciences<br>Under Review at IEEE Transactions on Geoscience and Remote Sensing (TGRS)</span>
+                    <span class="author-block"><sup>1</sup>University of Chinese Academy of Sciences &nbsp;&nbsp; <sup>2</sup>Chinese Academy of Sciences &nbsp;&nbsp; <sup>3</sup>China University of Geosciences (Beijing)<br>Under Review at IEEE Transactions on Geoscience and Remote Sensing (TGRS)</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -390,6 +346,172 @@
 </div>
 </section>
 <!-- End image carousel -->
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">News</h2>
+    <div class="content">
+      <ul>
+        <li><strong>[2024.09]</strong> 🎉 Paper submitted to TGRS and currently under review.</li>
+        <li><strong>[2024.09]</strong> 📝 arXiv v3 released with updated experimental results.</li>
+        <li><strong>[2024.07]</strong> 🚀 LuSNAR dataset and code publicly released.</li>
+        <li><strong>[2024.07]</strong> 📄 Initial preprint available on arXiv.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Highlights</h2>
+    <div class="content">
+      <ul>
+        <li><strong>🌕 First Multi-Task Lunar Benchmark:</strong> Comprehensive dataset supporting semantic segmentation, SLAM, and 3D reconstruction simultaneously.</li>
+        <li><strong>📊 108GB High-Quality Data:</strong> Multi-sensor synchronized data including stereo cameras, LiDAR, and IMU across 9 diverse lunar scenes.</li>
+        <li><strong>🎯 Pixel-Perfect Ground Truth:</strong> High-precision semantic labels, depth maps, and 3D point clouds with category annotations.</li>
+        <li><strong>🏔️ Diverse Terrain Coverage:</strong> Scenes categorized by topographic relief and object density for robust algorithm evaluation.</li>
+        <li><strong>🔧 Unreal Engine Based:</strong> Photo-realistic rendering with physically accurate sensor simulation.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Supported Tasks</h2>
+    <div class="columns is-multiline">
+      <div class="column is-half"><div class="box has-text-centered"><strong>🖼️ 2D Semantic Segmentation</strong><br><small>Pixel-wise scene understanding</small></div></div>
+      <div class="column is-half"><div class="box has-text-centered"><strong>🧊 3D Semantic Segmentation</strong><br><small>Point cloud classification</small></div></div>
+      <div class="column is-half"><div class="box has-text-centered"><strong>🗺️ Visual SLAM</strong><br><small>Camera-based localization</small></div></div>
+      <div class="column is-half"><div class="box has-text-centered"><strong>📡 LiDAR SLAM</strong><br><small>3D mapping and odometry</small></div></div>
+      <div class="column is-half"><div class="box has-text-centered"><strong>🔍 Stereo Matching</strong><br><small>Depth estimation from stereo</small></div></div>
+      <div class="column is-half"><div class="box has-text-centered"><strong>🏗️ 3D Reconstruction</strong><br><small>Dense surface reconstruction</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Dataset Statistics</h2>
+    <div class="table-container">
+      <table class="table is-fullwidth is-striped is-hoverable">
+        <thead>
+          <tr>
+            <th>Component</th>
+            <th>Size</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Stereo Images</td><td>42 GB</td><td>1024×1024, 80°×80° FOV, 10 Hz</td></tr>
+          <tr><td>Depth Maps</td><td>50 GB</td><td>Dense per-pixel depth</td></tr>
+          <tr><td>Semantic Labels</td><td>356 MB</td><td>2D masks + 3D point annotations</td></tr>
+          <tr><td>LiDAR Point Clouds</td><td>14 GB</td><td>Up to 20M points/sec, semantic labels</td></tr>
+          <tr><td>IMU Data</td><td>-</td><td>100 Hz, 6-DOF measurements</td></tr>
+          <tr><td>Ground Truth Poses</td><td>-</td><td>Sub-millimeter accuracy</td></tr>
+          <tr><td><strong>Total Size</strong></td><td><strong>108 GB</strong></td><td><strong>9 scenes, multiple trajectories</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Dataset Structure</h2>
+    <pre><code>LuSNAR/
+├── image1/                    # Left camera
+│   ├── RGB/                   # Color images
+│   ├── Depth/                 # Depth maps
+│   └── Label/                 # Semantic labels
+├── image2/                    # Right camera (same structure)
+├── LiDAR/                     # Point cloud data
+│   ├── timestamp1.txt         # Format: x y z category
+│   └── ...
+├── Rover_pose.txt             # Ground truth trajectory
+└── IMU.txt                    # IMU measurements</code></pre>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Semantic Categories</h2>
+    <div class="columns">
+      <div class="column">
+        <h3 class="title is-5">2D Semantic Labels</h3>
+        <div class="table-container">
+          <table class="table is-fullwidth is-striped">
+            <thead><tr><th>Category</th><th>Hex Code</th></tr></thead>
+            <tbody>
+              <tr><td>Lunar Regolith</td><td>#BB469C</td></tr>
+              <tr><td>Impact Crater</td><td>#7800C8</td></tr>
+              <tr><td>Rock</td><td>#E8FA50</td></tr>
+              <tr><td>Mountain</td><td>#AD451F</td></tr>
+              <tr><td>Sky</td><td>#22C9F8</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="column">
+        <h3 class="title is-5">3D Point Cloud Labels</h3>
+        <div class="table-container">
+          <table class="table is-fullwidth is-striped">
+            <thead><tr><th>Category ID</th><th>Category</th></tr></thead>
+            <tbody>
+              <tr><td>-1</td><td>Lunar Regolith</td></tr>
+              <tr><td>0</td><td>Impact Crater</td></tr>
+              <tr><td>174</td><td>Rock</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Sensor Specifications</h2>
+    <div class="content">
+      <h3 class="title is-5">📷 Stereo Camera</h3>
+      <ul>
+        <li><strong>Resolution:</strong> 1024 × 1024 pixels</li>
+        <li><strong>Frame Rate:</strong> 10 Hz</li>
+        <li><strong>Field of View:</strong> 80° × 80°</li>
+        <li><strong>Baseline:</strong> 310 mm</li>
+        <li><strong>Focal Length:</strong> 610.17784 pixels</li>
+      </ul>
+
+      <h3 class="title is-5">📡 LiDAR</h3>
+      <ul>
+        <li><strong>Type:</strong> 128-beam spinning LiDAR</li>
+        <li><strong>Frequency:</strong> 10 Hz</li>
+        <li><strong>Horizontal FOV:</strong> 360°</li>
+        <li><strong>Vertical FOV:</strong> -25° to +27°</li>
+        <li><strong>Range:</strong> ≤30 m</li>
+        <li><strong>Point Rate:</strong> Up to 20M points/second</li>
+      </ul>
+
+      <h3 class="title is-5">🧭 IMU</h3>
+      <ul>
+        <li><strong>Frequency:</strong> 100 Hz</li>
+        <li><strong>Axes:</strong> 3-axis accelerometer &amp; gyroscope</li>
+        <li><strong>Accelerometer Random Walk:</strong> 0.002353596 m/s³√Hz</li>
+        <li><strong>Gyroscope Random Walk:</strong> 8.7266462e-5 rad/s√Hz</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Download</h2>
+    <div class="content has-text-centered">
+      <p><strong>Main Dataset (108 GB):</strong> <a href="https://pan.cstcloud.cn/s/2Ie7D5PSLU" target="_blank">CSTCloud Link</a> (Password: fjZt)</p>
+      <p><strong>BEV Data (Optional):</strong> <a href="https://pan.cstcloud.cn/s/ZzPLzrkTEc" target="_blank">CSTCloud Link</a> (Password: jtk0)</p>
+    </div>
+  </div>
+</section>
 
 
 
