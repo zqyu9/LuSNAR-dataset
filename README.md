@@ -3,7 +3,7 @@
 <div align="center">
 
 [![arXiv](https://img.shields.io/badge/arXiv-2407.06512-b31b1b.svg)](https://arxiv.org/abs/2407.06512)
-[![Project Page](https://img.shields.io/badge/Project-Page-blue)](https://github.com/zqyu9/LuSNAR-dataset)
+[![Project Page](https://img.shields.io/badge/Project-Page-blue)](https://luoxubo.github.io/LuSNAR-dataset/)
 [![Dataset](https://img.shields.io/badge/Dataset-CSTCloud-green)](https://pan.cstcloud.cn/s/2Ie7D5PSLU)
 [![Dataset](https://img.shields.io/badge/🤗-HuggingFace-yellow)](https://huggingface.co/datasets/JeremyLuo/LuSNAR)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
