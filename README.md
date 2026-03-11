@@ -215,10 +215,14 @@ The LuSNAR dataset is hosted on CSTCloud:
 # Main Dataset (108 GB)
 # Download from: https://pan.cstcloud.cn/s/2Ie7D5PSLU
 # Password: fjZt
+```
 
-# BEV Data (Optional)
-# Download from: https://pan.cstcloud.cn/s/ZzPLzrkTEc
-# Password: jtk0
+OR, you can access it via Hugging Face:
+
+```bash
+# Hugging Face Dataset
+from datasets import load_dataset
+dataset = load_dataset("JeremyLuo/LuSNAR")
 ```
 
 ### Data Format
